@@ -7,12 +7,15 @@
     text-align: center;
     // display: flex;
     padding-top: 60px;
-    // padding-bottom: 60px;
+    padding-bottom: 60px;
     @media (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
 
       justify-content: center;
+    }
+    @media (min-width: $desktop) {
+      padding-bottom: 0;
     }
   }
 }

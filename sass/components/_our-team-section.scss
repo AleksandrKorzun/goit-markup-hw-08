@@ -1,5 +1,6 @@
 .our-team-section {
-  @extend .section-mob;
+  @extend %section-mob;
+
   @media (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -14,6 +15,7 @@
   }
   &__list {
     text-align: center;
+    margin: auto;
     @media (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;

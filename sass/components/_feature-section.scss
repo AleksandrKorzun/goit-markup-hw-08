@@ -10,7 +10,7 @@
       display: none;
     }
     @media (min-width: $desktop) {
-      dfont-weight: bold;
+      font-weight: bold;
       font-size: 36px;
       line-height: 1.17;
       text-align: center;
@@ -33,19 +33,21 @@
 
   &__icons {
     display: block;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    // padding: 25px 100px;
+    // padding-top: 25px;
+    // padding-bottom: 25px;
+    padding: 25px 190px;
     margin-bottom: 30px;
     background-color: $secondary-background;
     border-radius: 4px;
+    @media (min-width: $tablet) {
+      padding: 25px 142px;
+    }
     @media (min-width: $desktop) {
       padding: 25px 100px;
     }
   }
-  &__icon {
-    margin: auto;
-  }
+  // &__icon {
+  // }
   &__item {
     width: 100%;
     @media (min-width: $tablet) {

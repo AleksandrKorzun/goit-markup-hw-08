@@ -101,6 +101,7 @@
 .socials-links-mob {
   &__list {
     display: flex;
+    // flex-wrap: wrap;
   }
   &__item:not(:last-child) {
     padding-right: 10px;
@@ -113,9 +114,12 @@
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $color-accent;
+    @media (min-width: 420px) {
+      font-size: 18px;
+    }
   }
 }

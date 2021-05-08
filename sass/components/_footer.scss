@@ -14,9 +14,9 @@
 
       justify-content: center;
     }
-    @media (min-width: $desktop) {
-      padding-bottom: 0;
-    }
+    // @media (min-width: $desktop) {
+    //   padding-bottom: 0;
+    // }
   }
 }
 .footer-contact {
@@ -34,6 +34,11 @@
 
     display: block;
     margin-bottom: 20px;
+
+    @media (min-width: $desktop) {
+      font-size: 26px;
+      line-height: 1.2;
+    }
   }
 
   &__logo--footer {
@@ -42,11 +47,17 @@
 }
 .footer-contact__wrapper {
   margin-bottom: 60px;
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
   &--address {
     @extend %text;
     line-height: 1.55;
     color: $color-secondary;
     margin-bottom: 8px;
+    @media (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
   }
   &--mail,
   &--tel {
@@ -58,6 +69,9 @@
   }
   &--mail {
     margin-bottom: 8px;
+    @media (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -77,6 +91,9 @@
   &__list {
     @extend .social-links;
     margin-bottom: 60px;
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+    }
   }
   &__btn {
     @extend .social-links__btn;

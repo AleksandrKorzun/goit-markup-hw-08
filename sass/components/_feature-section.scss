@@ -39,6 +39,9 @@
     margin-bottom: 30px;
     background-color: $secondary-background;
     border-radius: 4px;
+    @media (max-width: $mobile) {
+      padding: 25px 0;
+    }
     @media (min-width: $tablet) {
       padding: 25px 142px;
     }
@@ -46,8 +49,11 @@
       padding: 25px 100px;
     }
   }
-  // &__icon {
-  // }
+  &__icon {
+    @media (max-width: $mobile) {
+      margin: auto;
+    }
+  }
   &__item {
     width: 100%;
     @media (min-width: $tablet) {

@@ -1,10 +1,12 @@
 .footer {
   text-align: center;
   background-color: $footer-background;
-
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
   &__container {
     @extend .container;
-    text-align: center;
+    // text-align: center;
     // display: flex;
     padding-top: 60px;
     padding-bottom: 60px;

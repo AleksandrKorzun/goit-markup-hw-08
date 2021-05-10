@@ -1,7 +1,7 @@
 .hero-section {
   @extend %section;
   text-align: center;
-
+  min-width: 320px;
   max-width: 1600px;
   width: 100%;
   margin-left: auto;
@@ -82,6 +82,9 @@
     line-height: 162%;
     color: $color_secondary;
     text-transform: uppercase;
+    @media (max-width: $mobile) {
+      width: auto;
+    }
     @media (min-width: $desktop) {
       font-size: 44px;
       line-height: 137%;

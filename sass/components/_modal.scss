@@ -4,7 +4,8 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 450px;
+  min-width: auto;
+  min-height: auto;
   // min-height: calc(100% - 188px);
   margin: auto;
 
@@ -19,6 +20,10 @@
   //   min-width: calc(100% - 318px);
   //   min-height: calc(100% - 416px);
   // }
+  @media (min-width: $mobile) {
+    width: 450px;
+    // height: 581px;
+  }
   @media (min-width: $desktop) {
     min-width: auto;
     min-height: auto;
